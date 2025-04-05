@@ -1,0 +1,8 @@
+dota_na_kolenke
+{
+	material materials/overviews/dota_na_kolenke.vmat
+	pos_x -8192
+	pos_y 8192
+	scale 16.000
+}
+

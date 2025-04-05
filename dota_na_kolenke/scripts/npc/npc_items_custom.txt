@@ -1,0 +1,20 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"item_roshanq"
+		{
+			"BaseClass"          "item_lua"
+			"ScriptFile"		 "items/item_roshanq"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+			"ItemCost"					"7800"
+			"AbilityTextureName"		"roshanq_imageq"
+			"ItemDroppable"					"0" // 1 - можно выбросить. 0 - выбросить нельзя.
+			"category" "Consumables" // или другая категория
+
+
+
+		}
+
+
+}
