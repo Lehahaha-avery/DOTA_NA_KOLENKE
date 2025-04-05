@@ -36,6 +36,7 @@ function CAddonTemplateGameMode:InitGameMode()
 	GameRules:SetStrategyTime(25.0)
 	GameRules:SetPreGameTime(10.0)
 	GameRules:SetUseUniversalShopMode(true)
+	self:StartModifierCheckLoop("modifier_item_roshanq")
 end
 
 function CAddonTemplateGameMode:OnThink()
@@ -212,3 +213,29 @@ ListenToGameEvent("game_rules_state_change", function()
         SpawnCouriers()
     end
 end, nil)
+
+
+
+
+
+
+
+
+
+function CAddonTemplateGameMode:StartModifierCheckLoop(modifier_name)
+    Timers:CreateTimer(function()
+        for player_id = 0, DOTA_MAX_PLAYERS - 1 do
+            if PlayerResource:IsValidPlayerID(player_id) then
+                local hero = PlayerResource:GetSelectedHeroEntity(player_id)
+                if hero and hero:IsAlive() then
+                    if hero:HasModifier(modifier_name) then
+                    	local team = hero:GetTeam()
+                end
+            end
+        end
+
+        return 1.0 -- повторять каждую секунду (можно изменить интервал)
+    end)
+end
+
+
