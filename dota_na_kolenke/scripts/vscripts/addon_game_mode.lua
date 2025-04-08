@@ -282,10 +282,10 @@ ListenToGameEvent("entity_killed", function(event)
         if name == "dota_custom1_fort" or name == "dota_custom2_fort" or name == "dota_custom3_fort" or name == "dota_custom4_fort" then
             if name == "dota_custom1_fort" then
                 tron_custom1 = false
-		        roshan_custom1 = false
+		roshan_custom1 = false
             elseif name == "dota_custom2_fort" then
                 tron_custom2 = false
-		        roshan_custom2 = false
+		roshan_custom2 = false
             elseif name == "dota_custom3_fort" then
                 tron_custom3 = false
                 roshan_custom3 = false
