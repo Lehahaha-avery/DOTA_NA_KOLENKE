@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	"item_roshanq"
+		{
+			"BaseClass"          "item_lua"
+			"ScriptFile"		 "items/item_roshanq"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+			"ItemCost"					"4200"
+			"AbilityTextureName"		"roshanq_imageq"
+			"ItemDroppable"					"0" // 1 - можно выбросить. 0 - выбросить нельзя.
+			"category" "Consumables" // или другая категория
+		}
+
+
+
+
+	"item_telega"
+		{
+			"BaseClass"          "item_lua"
+			"ScriptFile"		 "items/item_telega"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+			"ItemCost"					"1200"
+			"AbilityTextureName"		"telega_imageq"
+			"ItemDroppable"					"0" // 1 - можно выбросить. 0 - выбросить нельзя.
+			"category" "Consumables" // или другая категория
+		}
+
+
+	"item_mega"
+		{
+			"BaseClass"          "item_lua"
+			"ScriptFile"		 "items/item_mega"
+			"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+			"ItemCost"					"4500"
+			"AbilityTextureName"		"mega_imageq"
+			"ItemDroppable"					"0" // 1 - можно выбросить. 0 - выбросить нельзя.
+			"category" "Consumables" // или другая категория
+		}
+
+
+}

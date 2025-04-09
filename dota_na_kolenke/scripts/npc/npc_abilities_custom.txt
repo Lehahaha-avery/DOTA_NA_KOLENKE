@@ -1,0 +1,32 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"     "1"
+	
+	"backdoor_protection"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"MaxLevel"						"1"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityValues"
+		{
+			"radius"
+			{
+				"value" "900"
+			}
+			"activation_time"
+			{
+				"value" "10"
+			}
+			"regen_rate"
+			{
+				"value" "2000"
+			}
+		}
+	}
+
+	
+	
+}
