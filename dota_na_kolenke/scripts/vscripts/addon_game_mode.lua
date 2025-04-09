@@ -56,13 +56,13 @@ end
 function Wave_test()
 	
 	local tower1_custom1_1 = Entities:FindByName(nil ,'tower1_custom1_1')
-    local tower2_custom1_1 = Entities:FindByName(nil ,'tower2_custom1_1')
-    local tower1_custom2_1 = Entities:FindByName(nil ,'tower1_custom2_1')
-    local tower2_custom2_1 = Entities:FindByName(nil ,'tower2_custom2_1')
-    local tower1_custom3_1 = Entities:FindByName(nil ,'tower1_custom3_1')
-    local tower2_custom3_1 = Entities:FindByName(nil ,'tower2_custom3_1')
-    local tower1_custom4_1 = Entities:FindByName(nil ,'tower1_custom4_1')
-    local tower2_custom4_1 = Entities:FindByName(nil ,'tower2_custom4_1')
+	local tower2_custom1_1 = Entities:FindByName(nil ,'tower2_custom1_1')
+	local tower1_custom2_1 = Entities:FindByName(nil ,'tower1_custom2_1')
+	local tower2_custom2_1 = Entities:FindByName(nil ,'tower2_custom2_1')
+	local tower1_custom3_1 = Entities:FindByName(nil ,'tower1_custom3_1')
+	local tower2_custom3_1 = Entities:FindByName(nil ,'tower2_custom3_1')
+	local tower1_custom4_1 = Entities:FindByName(nil ,'tower1_custom4_1')
+	local tower2_custom4_1 = Entities:FindByName(nil ,'tower2_custom4_1')
 	
 	for i=1, 4 do
 
@@ -70,7 +70,7 @@ function Wave_test()
 		local unit3_t1 = CreateUnitByName('npc_dota_creep_badguys_melee',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
 		local unit5_t1 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
 		local unit7_t1 = CreateUnitByName('npc_dota_creep_badguys_melee',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-        local unit_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+        	local unit_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
 		local unit3_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
 		local unit5_t2 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
 		local unit7_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
@@ -78,7 +78,7 @@ function Wave_test()
 		unit3_t1:SetInitialGoalEntity(tower1_custom4_1)
 		unit5_t1:SetInitialGoalEntity(tower1_custom3_1)
 		unit7_t1:SetInitialGoalEntity(tower1_custom2_1)
-        unit_t2:SetInitialGoalEntity(tower2_custom1_1)
+        	unit_t2:SetInitialGoalEntity(tower2_custom1_1)
 		unit3_t2:SetInitialGoalEntity(tower2_custom4_1)
 		unit5_t2:SetInitialGoalEntity(tower2_custom3_1)
 		unit7_t2:SetInitialGoalEntity(tower2_custom2_1)
@@ -89,7 +89,7 @@ function Wave_test()
 	local unit4_t1 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
 	local unit6_t1 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
 	local unit8_t1 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-    local unit2_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+    	local unit2_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
 	local unit4_t2 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
 	local unit6_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
 	local unit8_t2 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
@@ -97,87 +97,87 @@ function Wave_test()
 	unit4_t1:SetInitialGoalEntity(tower1_custom4_1)
 	unit6_t1:SetInitialGoalEntity(tower1_custom3_1)
 	unit8_t1:SetInitialGoalEntity(tower1_custom2_1)
-    unit2_t2:SetInitialGoalEntity(tower2_custom1_1)
+    	unit2_t2:SetInitialGoalEntity(tower2_custom1_1)
 	unit4_t2:SetInitialGoalEntity(tower2_custom4_1)
 	unit6_t2:SetInitialGoalEntity(tower2_custom3_1)
 	unit8_t2:SetInitialGoalEntity(tower2_custom2_1)		
 	
-	Timers:CreateTimer(60, function()
+	Timers:CreateTimer(30, function()
 		for i=1, 4 do
-            if tron_custom1 == true then
-			    local unit_t1 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower1_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
-                local unit_t2 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
-                unit_t1:SetInitialGoalEntity(tower1_custom1_1)
-                unit_t2:SetInitialGoalEntity(tower2_custom1_1)
-            end
-            if tron_custom4 == true then
-			    local unit3_t1 = CreateUnitByName('npc_dota_creep_badguys_melee',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
-                local unit3_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
-                unit3_t1:SetInitialGoalEntity(tower1_custom4_1)
-                unit3_t2:SetInitialGoalEntity(tower2_custom4_1)
-            end
-            if tron_custom3 == true then
-			    local unit5_t1 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
-                local unit5_t2 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
-                unit5_t1:SetInitialGoalEntity(tower1_custom3_1)
-                unit5_t2:SetInitialGoalEntity(tower2_custom3_1)
-            end
-            if tron_custom2 == true then
-			    local unit7_t1 = CreateUnitByName('npc_dota_creep_badguys_melee',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-                local unit7_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-                unit7_t1:SetInitialGoalEntity(tower1_custom2_1)
-                unit7_t2:SetInitialGoalEntity(tower2_custom2_1)
-            end
+	            if tron_custom1 == true then
+			local unit_t1 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower1_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+	                local unit_t2 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+	                unit_t1:SetInitialGoalEntity(tower1_custom1_1)
+	                unit_t2:SetInitialGoalEntity(tower2_custom1_1)
+	            end
+	            if tron_custom4 == true then
+			local unit3_t1 = CreateUnitByName('npc_dota_creep_badguys_melee',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
+	                local unit3_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
+	                unit3_t1:SetInitialGoalEntity(tower1_custom4_1)
+	                unit3_t2:SetInitialGoalEntity(tower2_custom4_1)
+	            end
+	            if tron_custom3 == true then
+				    local unit5_t1 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
+	                local unit5_t2 = CreateUnitByName('npc_dota_creep_goodguys_melee',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
+	                unit5_t1:SetInitialGoalEntity(tower1_custom3_1)
+	                unit5_t2:SetInitialGoalEntity(tower2_custom3_1)
+	            end
+	            if tron_custom2 == true then
+				    local unit7_t1 = CreateUnitByName('npc_dota_creep_badguys_melee',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
+	                local unit7_t2 = CreateUnitByName('npc_dota_creep_badguys_melee',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
+	                unit7_t1:SetInitialGoalEntity(tower1_custom2_1)
+	                unit7_t2:SetInitialGoalEntity(tower2_custom2_1)
+	            end
 			
 		end
-        if tron_custom1 == true then
-            local unit2_t1 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower1_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
-            local unit2_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
-            unit2_t1:SetInitialGoalEntity(tower1_custom1_1)
-            unit2_t2:SetInitialGoalEntity(tower2_custom1_1)
-            if roshan_custom1 == true then
-                local roshan1_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
-                local roshan1_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
-                roshan1_t1:SetInitialGoalEntity(tower1_custom1_1)
-                roshan1_t2:SetInitialGoalEntity(tower2_custom1_1)
-            end
-        end
-        if tron_custom4 == true then
-            local unit4_t1 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
-            local unit4_t2 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
-            unit4_t1:SetInitialGoalEntity(tower1_custom4_1)
-            unit4_t2:SetInitialGoalEntity(tower2_custom4_1)
-            if roshan_custom4 == true then
-                local roshan4_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
-                local roshan4_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
-                roshan4_t1:SetInitialGoalEntity(tower1_custom4_1)
-                roshan4_t2:SetInitialGoalEntity(tower2_custom4_1)
-            end
-        end
-        if tron_custom3 == true then
-            local unit6_t1 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
-            local unit6_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
-            unit6_t1:SetInitialGoalEntity(tower1_custom3_1)
-            unit6_t2:SetInitialGoalEntity(tower2_custom3_1)
-            if roshan_custom3 == true then
-                local roshan3_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
-                local roshan3_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
-                roshan3_t1:SetInitialGoalEntity(tower1_custom3_1)
-                roshan3_t2:SetInitialGoalEntity(tower2_custom3_1)
-            end
-        end
-        if tron_custom2 == true then
-            local unit8_t1 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-            local unit8_t2 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-            unit8_t1:SetInitialGoalEntity(tower1_custom2_1)
-            unit8_t2:SetInitialGoalEntity(tower2_custom2_1)
-            if roshan_custom2 == true then
-                local roshan2_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-                local roshan2_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
-                roshan2_t1:SetInitialGoalEntity(tower1_custom2_1)
-                roshan2_t2:SetInitialGoalEntity(tower2_custom2_1)
-            end
-        end
+	        if tron_custom1 == true then
+	            local unit2_t1 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower1_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+	            local unit2_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+	            unit2_t1:SetInitialGoalEntity(tower1_custom1_1)
+	            unit2_t2:SetInitialGoalEntity(tower2_custom1_1)
+	            if roshan_custom1 == true then
+	                local roshan1_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+	                local roshan1_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom1_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_1)
+	                roshan1_t1:SetInitialGoalEntity(tower1_custom1_1)
+	                roshan1_t2:SetInitialGoalEntity(tower2_custom1_1)
+	            end
+	        end
+	        if tron_custom4 == true then
+	            local unit4_t1 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
+	            local unit4_t2 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
+	            unit4_t1:SetInitialGoalEntity(tower1_custom4_1)
+	            unit4_t2:SetInitialGoalEntity(tower2_custom4_1)
+	            if roshan_custom4 == true then
+	                local roshan4_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
+	                local roshan4_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom4_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_4)
+	                roshan4_t1:SetInitialGoalEntity(tower1_custom4_1)
+	                roshan4_t2:SetInitialGoalEntity(tower2_custom4_1)
+	            end
+	        end
+	        if tron_custom3 == true then
+	            local unit6_t1 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
+	            local unit6_t2 = CreateUnitByName('npc_dota_creep_goodguys_ranged',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
+	            unit6_t1:SetInitialGoalEntity(tower1_custom3_1)
+	            unit6_t2:SetInitialGoalEntity(tower2_custom3_1)
+	            if roshan_custom3 == true then
+	                local roshan3_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
+	                local roshan3_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom3_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_3)
+	                roshan3_t1:SetInitialGoalEntity(tower1_custom3_1)
+	                roshan3_t2:SetInitialGoalEntity(tower2_custom3_1)
+	            end
+	        end
+	        if tron_custom2 == true then
+	            local unit8_t1 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
+	            local unit8_t2 = CreateUnitByName('npc_dota_creep_badguys_ranged',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
+	            unit8_t1:SetInitialGoalEntity(tower1_custom2_1)
+	            unit8_t2:SetInitialGoalEntity(tower2_custom2_1)
+	            if roshan_custom2 == true then
+	                local roshan2_t1 = CreateUnitByName('npc_dota_roshanq',tower1_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
+	                local roshan2_t2 = CreateUnitByName('npc_dota_roshanq',tower2_custom2_1:GetAbsOrigin(),true,nil,nil,DOTA_TEAM_CUSTOM_2)
+	                roshan2_t1:SetInitialGoalEntity(tower1_custom2_1)
+	                roshan2_t2:SetInitialGoalEntity(tower2_custom2_1)
+	            end
+	        end
 		return 60
 	end)
 end
@@ -195,13 +195,13 @@ function CAddonTemplateGameMode:OnThink()
 end
 
 function CAddonTemplateGameMode:StartModifierCheckLoop(modifier_name)
-    Timers:CreateTimer(function()
-        for player_id = 0, DOTA_MAX_PLAYERS - 1 do
-            if PlayerResource:IsValidPlayerID(player_id) then
-                local hero = PlayerResource:GetSelectedHeroEntity(player_id)
-                if hero and hero:IsAlive() then
-                    if hero:HasModifier(modifier_name) then
-                        local team = hero:GetTeam()
+	Timers:CreateTimer(function()
+		for player_id = 0, DOTA_MAX_PLAYERS - 1 do
+			if PlayerResource:IsValidPlayerID(player_id) then
+				local hero = PlayerResource:GetSelectedHeroEntity(player_id)
+				if hero and hero:IsAlive() then
+					if hero:HasModifier(modifier_name) then
+						local team = hero:GetTeam()
 						if team == DOTA_TEAM_CUSTOM_1 then
 							roshan_custom1 = true
 						elseif team == DOTA_TEAM_CUSTOM_2 then
@@ -212,11 +212,11 @@ function CAddonTemplateGameMode:StartModifierCheckLoop(modifier_name)
 							roshan_custom4 = true
 						end
 					end
-                end
-            end
-        end
-        return 1.0
-    end)
+				end
+			end
+		end
+		return 1.0
+	end)
 end
 
 function OnGameRulesStateChange()
@@ -229,20 +229,20 @@ end
 function OnBuildingDestroyed(event)
 	local building = EntIndexToHScript(event.entindex_killed)
 	if building:GetName() == "dota_custom1_fort" then
-        tron_custom1 = false
+        	tron_custom1 = false
 		roshan_custom1 = false
 		KillAndDisableRespawn(DOTA_TEAM_CUSTOM_1)  
 	elseif building:GetName() == "dota_custom2_fort" then
-        tron_custom1 = false
-		roshan_custom1 = false
+        	tron_custom2 = false
+		roshan_custom2 = false
 		KillAndDisableRespawn(DOTA_TEAM_CUSTOM_2)
 	elseif building:GetName() == "dota_custom3_fort" then
-        tron_custom1 = false
-		roshan_custom1 = false
+        	tron_custom3 = false
+		roshan_custom3 = false
 		KillAndDisableRespawn(DOTA_TEAM_CUSTOM_3)  
 	elseif building:GetName() == "dota_custom4_fort" then
-        tron_custom1 = false
-		roshan_custom1 = false
+        	tron_custom4 = false
+		roshan_custom4 = false
 		KillAndDisableRespawn(DOTA_TEAM_CUSTOM_4)  
 	end
 end
@@ -255,8 +255,8 @@ function KillAndDisableRespawn(team)
 				hero:ForceKill(false) 
 				hero:SetTimeUntilRespawn(-1)  
 				hero:SetBuybackCooldownTime(99999)  
-                hero:SetBuybackGoldCost(99999)  
-                hero:SetBuybackDisabledByReapersScythe(true) 
+		                hero:SetBuybackGoldCost(99999)  
+		                hero:SetBuybackDisabledByReapersScythe(true) 
 			end
 		end
 	end
@@ -312,4 +312,3 @@ ListenToGameEvent("entity_killed", function(event)
         end
     end
 end, nil)
-
